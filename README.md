@@ -142,12 +142,12 @@ export class AppModule {
   "private": false,
   ...
 ```
-這邊將runtime.js ,polyfills.js,scripts.js,main.js 合併成單一檔案 `ng-notebook.js` 
+這邊將 `runtime.js` ,`polyfills.js` , `scripts.js` , `main.js` 合併成單一檔案 `ng-notebook.js` 
 
 > 目前建置步驟已經建立完畢了 , 可以專心進行component的開發
 
 
-###Component撰寫
+### Component撰寫
 
 修改 `./src/app/ng-notebook/ng-notebnook.component.html`
 
