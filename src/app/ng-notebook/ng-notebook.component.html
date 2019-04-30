@@ -1,0 +1,26 @@
+<div class="notebook" cdkDrag>
+  <div class="notebook-top">
+      <mat-icon class='zoom_in' (click)="displaycontent = !displaycontent ">{{displaycontent ? 'zoom_out' : 'zoom_in'}}</mat-icon>
+      <mat-icon class="zoom_out_map" cdkDragHandle>zoom_out_map</mat-icon>  
+    </div>
+<div class="notebook-content"  *ngIf="displaycontent">
+<div class="note-list" *ngIf="notecollection && notecollection.length > 0;else nodata"> 
+    <div class='note-item' *ngFor="let note of notecollection">   
+          <div><strong>{{note.name}}</strong></div>
+          <div><samp>{{note.content}}</samp></div>
+          <div align="right"><small>{{note.time}}</small></div>
+      </div>
+</div>
+<ng-template #nodata>尚無資料</ng-template>
+<div class="note-input">
+<mat-form-field class="txt-note">
+   <textarea matInput [(ngModel)]="notePayload.content"></textarea>
+</mat-form-field>
+<div align="center">
+  <input matInput [(ngModel)]="name" />
+  <button mat-button class="btn-note" (click)="btnSend($event)">送出</button>
+</div> 
+</div>
+</div>
+   
+</div>

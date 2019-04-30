@@ -1,0 +1,95 @@
+
+  .notebook {
+    width: 400px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    background: #ffe4b3;
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .notebook:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .notebook-top {
+    height: 24px;
+    background-color: orange;
+    width: 100%;
+  }
+
+  .notebook-content{
+    height: 400px;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .material-icons {
+    font-family: Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.notebook-top .material-icons{  
+    position: absolute;  
+    cursor: pointer;
+} 
+.notebook-top{
+  .zoom_in{
+    left:  0;
+    
+  }
+  .zoom_out_map{
+    right: 0;
+  }
+}
+
+.note-list{
+ max-height: 300px;
+ overflow-y: scroll;
+ .note-item{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom-color: gray;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+
+
+  samp{
+   
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  small{   
+    color: gray;
+    font-style: italic;
+
+  }
+
+}
+}
+
+.txt-note{
+  background-color: #fff;
+  width: 100%
+}
+
+.note-input{  
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+  
+
+
