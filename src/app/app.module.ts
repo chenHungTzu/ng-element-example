@@ -35,6 +35,6 @@ export class AppModule {
     customElements.define('ng-notebook', comppnent); 
   }
 
-  ngDoBootstrap() {}
+  
 
 }
