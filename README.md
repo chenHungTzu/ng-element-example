@@ -8,18 +8,18 @@
 > * 外部引用
 
 ###瀏覽器支援
-| 瀏覽器    |    支援程度      |  
-|----------|:-------------: |
-| Chrome   |    支持 	     | 
-| Opera    |    支持  		  | 
-| Safari   |    支持 		  |  
-| Edge     |    尚未支持      | 
-| Firefox  |    ver.63+ 支持  | 
+|  瀏覽器    |    支援程度      |
+| ---------- |:-------------: |
+|  Chrome   |    支持 	     |
+|  Opera    |    支持  		  |
+|  Safari   |    支持 		  |
+|  Edge     |    尚未支持      |
+|  Firefox  |    ver.63+ 支持  |
 
-###開發限制
+### 開發限制
 > `@angular/cli` 版本 `6+`
 
-###建置步驟
+### 建置步驟
 > 目的 ： 在空白 .html內建立一個浮動方框 , 可讓使用者能夠輸入資料 , 且可伸縮拖曳 , 展示結果如下
 
 ![demo](https://github.com/chenHungTzu/ng-element-example/blob/master/demo2.gif?raw=true)
@@ -368,7 +368,8 @@ export class notePayload {
  npm run build
  ```
 
-###外部引用
+### 外部引用
+
 建立 `index.html` , 且異動內容如下
 
 ```javascript
